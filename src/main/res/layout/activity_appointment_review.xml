@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        android:layout_margin="7dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:id="@+id/CardView"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:id="@+id/CourseInfo"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:background="@color/teal_700"
+                        android:text="Doctor Specialist"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/viewDSpecialist2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:padding="10dp"
+                        android:text="Not found"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:id="@+id/UserInfo"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:background="@color/teal_700"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Doctor Name"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:id="@+id/viewDName2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:padding="10dp"
+                        android:text="Not accepted yet!"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Doctor Email"
+                        android:background="@color/teal_700"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewDEmail2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not accepted yet!"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Doctor Phone NO"
+                        android:background="@color/teal_700"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewDPhone2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not accepted yet!"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Meeting Location"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewLocation2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not found"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Appointment Time"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewTime2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not found"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Appointment Date"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewDate2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not found"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Patient Name"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewPName2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not found"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Patient Email"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewPEmail2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not found"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Patient Phone No"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewPatientPhone2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not found"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Patient Age"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewAge2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not found"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="10dp"
+                        android:text="Patient Address"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewPAddress2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Not found"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="12dp"
+                        android:text="Appointment Status"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewStatus2"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="Pending"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="30"
+                        android:lines="1"
+                        android:padding="12dp"
+                        android:text="Feedback"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="70"
+                        android:id="@+id/viewfeedback"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:hint="write a feedback here"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="56"
+                        android:lines="1"
+                        android:padding="16dp"
+                        android:text="Rate the Service"
+                        android:textColor="@color/white"
+                        android:background="@color/teal_700"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50"
+                        android:id="@+id/viewRates"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="No rate"
+                        android:padding="13dp"
+                        android:textColor="@color/black"
+                        />
+                    <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/viewRate"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginRight="5dp"
+                        android:padding="13dp"
+                        app:ms_background_color="@color/teal_700"
+                        app:ms_hint="Rate The Service"
+                        app:ms_text_color="@color/white" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/viewUpdate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="100"
+                        android:padding="10dp"
+                        android:backgroundTint="@color/Blue"
+                        android:text="Update Feedback and Rating"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="normal"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clinicmanagementsystem">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/syslogobg"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_applogo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ClinicManagementSystem">
+        <activity android:name=".AuthAuthenticatioAndRegistration.DoctorRegistration" />
+
+        <activity android:name=".Activities.PatientPanel" />
+        <activity android:name=".Activities.DoctorPanel" />
+        <activity android:name=".Activities.CreateAppointment" />
+        <activity android:name=".Activities.PatientProfile" />
+        <activity android:name=".Activities.DoctorProfile" />
+        <activity android:name=".Activities.RequestedAppointment" />
+        <activity android:name=".Activities.ReviewAppointment" />
+        <activity android:name=".Activities.AppointmentSchedule" />
+        <activity android:name=".Activities.AdminPanel" />
+        <activity android:name=".Activities.AppointmentRecords" />
+        <activity android:name=".Activities.PatientRecords" />
+        <activity android:name=".Activities.PatientAppointmentRecords" />
+        <activity android:name=".Activities.DoctorAppointmentRecords" />
+        <activity android:name=".Activities.DoctorRecords" />
+        <activity android:name=".AuthAuthenticatioAndRegistration.PatientRegistration" />
+        <activity android:name=".AuthAuthenticatioAndRegistration.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" ></action>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
